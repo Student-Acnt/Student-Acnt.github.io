@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <div class="logo-title">
+                <img src="../Web System/Extra/logo2_red.png" alt="WargamingHD Logo" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../Web System/index.html#Home">Home</a></li>
+                    <li><a href="../Web System/index.html#reviews">Reviews</a></li>
+                    <li><a href="../Web System/index.html#news">News</a></li>
+                    <li><a href="../Web System/index.html#contact">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2 style="color:gray">About the Author</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="../Web System/Extra/johnDoe.jpg" alt="Author Portrait">
+                </div>
+                <div class="about-text">
+                    <h3>John Doe</h3>
+                    <p>John Doe is the founder and chief editor of Wargaming HD, an online platform dedicated to the gaming community. With over 15 years of experience in gaming journalism, John has built a reputation for in-depth game reviews, news analysis, and opinion pieces. His mission is to provide readers with unbiased and insightful content that helps them navigate the ever-changing gaming landscape.</p>
+                    
+                    <p>John's love for gaming started in his early childhood with retro consoles and has since evolved into a passion for next-gen titles and indie game gems. He has covered everything from AAA blockbusters to niche indie games, attending major gaming events like E3, Gamescom, and PAX.</p>
+    
+                    <p>Outside of gaming, John enjoys streaming live gameplay, engaging with his community, and hosting podcast discussions on the future of gaming technology. When he's not in front of a screen, you'll find him exploring the outdoors or indulging in his other hobby—board games.</p>
+    
+                    <p>As the heart and voice behind Wargaming HD, John is dedicated to making this site the ultimate hub for gamers worldwide.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>We’d love to hear from you! Whether you have questions about the latest game releases, need game recommendations, or want to share your gaming experiences, we’re here to assist. Fill out the form below, and our team will get back to you as soon as possible.</p>
+                <p>For quicker assistance, feel free to reach out to us at <a href="mailto:contact@wargaminghd.com">contact@wargaminghd.com</a> or give us a call at <a href="tel:+15551234567">+1 (555) 123-4567</a>. Don’t forget to follow us on social media for the latest updates, gaming news, and exclusive content!</p>
+            </div>
+            <div class="form-container">
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </footer>   
+    
+</body>
+</html>

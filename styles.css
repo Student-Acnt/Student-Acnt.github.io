@@ -1,0 +1,350 @@
+  /* General Reset and Body Styling */
+  body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #333; /* Background color for header */
+    padding: 1rem 2rem; /* Adjust padding as needed */
+    position: relative;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack logo and title vertically */
+}
+
+.logo-title {
+    display: flex;
+    align-items: center; /* Center logo and title vertically */
+    justify-content: center; /* Center logo and title horizontally */
+    margin-bottom: 1rem; /* Space between logo/title and navigation */
+}
+
+.logo {
+    width: 350px; /* Adjust size as needed */
+    height: 250px;
+    margin-top: -80px;
+    margin-bottom:-100px;
+}
+
+h1 {
+    color: #fff; /* Text color for the title */
+    font-size: 2rem; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+}
+
+nav {
+    margin-top: 1rem; /* Space between title/logo and navigation */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center navigation items horizontally */
+}
+
+nav ul li {
+    margin: 0 1rem; /* Space between navigation items */
+}
+
+nav ul li a {
+    color: #fff; /* Text color for navigation links */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Adjust font size as needed */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}   
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff0;
+}
+
+/* Home Section */
+section#home {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0;
+    padding: 0;
+}
+
+section#home video {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain; /* Ensure the video fits within the viewport while maintaining aspect ratio */
+    z-index: 1; /* Place video below the logo */
+}
+
+
+/* Highlights Section */
+section#highlight {
+    padding: 2rem;
+    background: #1c1c1c;
+}
+
+.video-container {
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+/* Reviews Section */
+section#reviews {
+    padding: 2rem;
+}
+
+.review-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.review, .news-item {
+    background: #2b2b2b;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+}
+
+.review-image img, .news-image img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.review-content {
+    padding: 1rem;
+    flex: 1;
+}
+
+.review-content h3 {
+    color: #ff0;
+    margin-bottom: 0.5rem;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #ff0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* News Section */
+section#news {
+    padding: 2rem;
+}
+
+.news-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.news-item {
+    background: #2b2b2b;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+}
+
+.news-image img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 1rem;
+}
+
+.news-content h3 {
+    color: #ff0;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Section */
+footer#contact {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color */
+    padding: 2rem; /* Padding for spacing */
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Space between left and right content */
+    align-items: flex-start; /* Align items at the top */
+    max-width: 1200px; /* Max width for the footer */
+    margin: 0 auto; /* Center the footer content horizontally */
+}
+
+.contact-info {
+    flex: 1; /* Takes up available space */
+    text-align: left; /* Align text to the left */
+}
+
+.contact-info h2 {
+    margin-top: 0; /* Remove default margin */
+}
+
+.contact-info p {
+    margin: 0.5rem 0; /* Space between paragraphs */
+}
+
+.contact-info a {
+    color: #ff9900; /* Highlight color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.form-container {
+    flex: 1; /* Takes up available space */
+    text-align: right; /* Align text to the right */
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: flex-end; /* Align form elements to the right */
+}
+
+.form-container label {
+    margin: 0.5rem 0 0.2rem; /* Space around labels */
+}
+
+.form-container input,
+.form-container textarea {
+    display: block; /* Make inputs block-level for full width */
+    margin: 0.2rem 0 1rem; /* Space between fields */
+    padding: 0.5rem; /* Padding inside fields */
+    width: 100%; /* Full width of container */
+    max-width: 300px; /* Max width of fields */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.form-container button {
+    padding: 0.5rem 1rem; /* Padding for button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #ff9900; /* Button background color */
+    color: #fff; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size for button */
+}
+
+.form-container button:hover {
+    background-color: #e68a00; /* Darker button color on hover */
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image, .about-text {
+        flex: 1;
+        max-width: 100%;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+} 
